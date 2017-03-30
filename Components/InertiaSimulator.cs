@@ -52,10 +52,10 @@ namespace Fizix
                 MovementPerFrame = new Vector3(MovementPerFrame.x, 0f, MovementPerFrame.z); // テスト中
             }
 
-            Debug.Log(
-            "CurrentGround : " + calculator.CurrentGround + " at " + calculator.CurrentPosition + "\n" +
-            "LastGround : " + calculator.LastGround + " at " + calculator.LastPosition + "\n"
-            );
+            //Debug.Log(
+            //"CurrentGround : " + calculator.CurrentGround + " at " + calculator.CurrentPosition + "\n" +
+            //"LastGround : " + calculator.LastGround + " at " + calculator.LastPosition + "\n"
+            //);
 
             calculator.UpdateLastInfo(currentGround);
             
