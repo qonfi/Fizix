@@ -9,7 +9,9 @@ using UnityEngine;
 namespace Fizix
 {
 
-
+    /// <summary>
+    /// コンポーネント。接地判定を行う。接地判定のインターフェイスを実装している。SphereCasterクラスに依存している。
+    /// </summary>
     public class GroundDetector : MonoBehaviour, IGroundDetector
     {
 
