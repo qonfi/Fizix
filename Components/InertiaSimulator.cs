@@ -49,23 +49,14 @@ namespace Fizix
             if (calculator.CurrentGround == calculator.LastGround)
             {
                 MovementPerFrame = calculator.CalcVelocity();
-                MovementPerFrame = new Vector3(MovementPerFrame.x, 0f, MovementPerFrame.z); // テスト中
+                // MovementPerFrame = new Vector3(MovementPerFrame.x, 0f, MovementPerFrame.z); // テスト中
             }
 
-            //Debug.Log(
-            //"CurrentGround : " + calculator.CurrentGround + " at " + calculator.CurrentPosition + "\n" +
-            //"LastGround : " + calculator.LastGround + " at " + calculator.LastPosition + "\n"
-            //);
+            //calculator.DebugInfo();
 
             calculator.UpdateLastInfo(currentGround);
-            
         }
-        
 
 
-
-        // 接地していないとき : 現在の移動をそのまま続ける
-        // 接地中 : 足場と同じ移動量ぶん移動する
-        // 接地終了 : LastGround の情報をリセットする。
     }
 }
