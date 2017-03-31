@@ -35,15 +35,6 @@ namespace Fizix
         }
 
 
-        public void Reset()
-        {
-            this.CurrentGround = null;
-            this.CurrentPosition = Vector3.zero;
-            this.LastGround = null;
-            this.LastPosition = Vector3.zero;
-        }
-
-
         public void ResetLastInfo()
         {
             LastGround = null;
@@ -55,6 +46,15 @@ namespace Fizix
         {
             // Time.deltaTime で割る必要があったのか。
             return  (CurrentPosition - LastPosition) / Time.deltaTime;
+        }
+
+
+        public void DebugInfo()
+        {
+            Debug.Log(
+            "CurrentGround : " + CurrentGround + " at " + CurrentPosition + "\n" +
+            "LastGround : " + LastGround + " at " +LastPosition + "\n"
+            );
         }
     }
 
