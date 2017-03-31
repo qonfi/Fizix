@@ -1,9 +1,4 @@
-﻿//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine.SceneManagement;
-//using UnityEngine.Networking; // (needs NetworkBehaviour)
-//using UnityEngine.UI;
-using System;
+﻿using System;
 using UnityEngine;
 
 namespace Fizix
@@ -34,8 +29,4 @@ namespace Fizix
         }
 
     }
-
-
-    
-
 }
